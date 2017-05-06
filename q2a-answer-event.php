@@ -68,6 +68,7 @@ class q2a_answer_event{
         if (qa_clicked('fb_share_save')) {
             qa_opt('facebook_app_id', qa_post_text('facebook_app_id'));
             qa_opt('facebook_app_secret', qa_post_text('facebook_app_secret'));
+            qa_opt('fb_page_access_token', qa_post_text('fb_page_access_token'));
 
             $ok = qa_lang('admin/options_saved');
         }
