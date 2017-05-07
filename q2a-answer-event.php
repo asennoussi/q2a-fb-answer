@@ -27,7 +27,7 @@ class q2a_answer_event{
                 $postId = $params['parentid'];
                 $message = str_replace('^1',$handle,qa_lang_html('plugin_answer_sharing/question_from'));
                 $message.=str_replace('^1',qa_get_logged_in_handle(),qa_lang_html('plugin_answer_sharing/answer_from'));
-                $message.='"'.substr($answer,0,100).'" ↓↓↓';
+                $message.='"'.substr($answer,0,100).'..." ↓↓↓';
 
                 $link = qa_opt('site_url').$postId;
 
